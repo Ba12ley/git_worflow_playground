@@ -9,7 +9,6 @@ jobs:
     steps:
       - name: Step one
         uses: actions/checkout@v2
-        run: ls -al
 
   job2:
     name: Second job
@@ -17,4 +16,3 @@ jobs:
     steps:
       - name: Step one
         uses: actions/checkout@v2
-        run: "Get-ChiiltItem Env: | Sort-Object Name"

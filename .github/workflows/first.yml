@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step one
-      - uses: actions/checkout@v2
-      run: ls -al
+        uses: actions/checkout@v2
+        run: ls -al
 
   job2:
     name: Second job
     runs-on: windows-latest
     steps:
       - name: Step one
-      - uses: actions/checkout@v2
-      run: "Get-ChiiltItem Env: | Sort-Object Name"
+        uses: actions/checkout@v2
+        run: "Get-ChiiltItem Env: | Sort-Object Name"

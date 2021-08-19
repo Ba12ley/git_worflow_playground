@@ -7,14 +7,15 @@ jobs:
 		name: First Job
 			runs-on: ubuntu-latest
 			steps:
-				-name: Step one
+				- name: Step one
 				uses: actions/checkout@v2
-				run: ls -al
+				run: env | sort
+
 
 	job2:
 		name: Second job
 			runs-on: windows-latest
-				steps:
-					-name: Step one
-					uses: actions/checkout@v2
-					run: dir
+			steps:
+				- name: Step one
+				uses: actions/checkout@v2
+				run: "Get-ChiiltItem Env: | Sort-Object Name"
